@@ -1,0 +1,729 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/israel.ogbole/projects/slack/slack-endpoint-mon/kubernetes
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 178
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 49
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Slack Endpoint Monitor - Kubernetes
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 15
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1154
+    content: 'kubernetes $ '
+  - delay: 5500
+    content: >-
+      # Hi, this is a quick demo on how to deploy the slack-endpoint-monitor app
+      on Kubernetes
+  - delay: 345
+    content: "\r\nkubernetes $ "
+  - delay: 4828
+    content: '# Let''s inspect the Kubernetes cluster status '
+  - delay: 392
+    content: "\r\nkubernetes $ "
+  - delay: 2124
+    content: "\r\nkubernetes $ "
+  - delay: 326
+    content: k
+  - delay: 78
+    content: ' '
+  - delay: 225
+    content: g
+  - delay: 102
+    content: e
+  - delay: 123
+    content: t
+  - delay: 124
+    content: ' '
+  - delay: 101
+    content: 'n'
+  - delay: 170
+    content: o
+  - delay: 89
+    content: ' '
+  - delay: 158
+    content: "\r\n"
+  - delay: 185
+    content: "NAME          STATUS   ROLES                  AGE     VERSION\r\npiworker1     Ready    <none>                 7d11h   v1.20.2-rc1+k3s1\r\npinasworker   Ready    <none>                 7d11h   v1.20.2-rc1+k3s1\r\npimaster      Ready    control-plane,master   7d12h   v1.20.2-rc1+k3s1\r\nkubernetes $ "
+  - delay: 1218
+    content: "\r\nkubernetes $ "
+  - delay: 574
+    content: k
+  - delay: 112
+    content: ' '
+  - delay: 124
+    content: g
+  - delay: 124
+    content: e
+  - delay: 112
+    content: t
+  - delay: 112
+    content: ' '
+  - delay: 316
+    content: '['
+  - delay: 664
+    content: "\b\e[K"
+  - delay: 191
+    content: p
+  - delay: 191
+    content: o
+  - delay: 180
+    content: "\r\n"
+  - delay: 160
+    content: "No resources found in slack namespace.\r\nkubernetes $ "
+  - delay: 1907
+    content: "\r\nkubernetes $ "
+  - delay: 4155
+    content: '# FWIW, my Kubernetes Cluster is running on Raspberry Pis. '
+  - delay: 941
+    content: "\r\nkubernetes $ "
+  - delay: 5539
+    content: '# Let''s get started '
+  - delay: 380
+    content: "\r\nkubernetes $ "
+  - delay: 4119
+    content: '# Create the secret'
+  - delay: 256
+    content: "\r\nkubernetes $ "
+  - delay: 7801
+    content: k create secret generic slack-oauth-token --from-literal=token=
+  - delay: 1875
+    content: x
+  - delay: 313
+    content: '0'
+  - delay: 316
+    content: x
+  - delay: 347
+    content: '0'
+  - delay: 1452
+    content: .
+  - delay: 90
+    content: .
+  - delay: 101
+    content: .
+  - delay: 91
+    content: .
+  - delay: 663
+    content: "^C\r\nkubernetes $ "
+  - delay: 584
+    content: "\r\nkubernetes $ "
+  - delay: 3128
+    content: k
+  - delay: 90
+    content: ' '
+  - delay: 124
+    content: g
+  - delay: 112
+    content: e
+  - delay: 91
+    content: t
+  - delay: 146
+    content: ' '
+  - delay: 180
+    content: s
+  - delay: 213
+    content: e
+  - delay: 416
+    content: c
+  - delay: 459
+    content: 'rets '
+  - delay: 679
+    content: "\r\n"
+  - delay: 154
+    content: "NAME                  TYPE                                  DATA   AGE\r\ndefault-token-p4qjd   kubernetes.io/service-account-token   3      7d9h\r\nslack-oauth-token     Opaque                                1      7d9h\r\nkubernetes $ "
+  - delay: 13816
+    content: l
+  - delay: 77
+    content: s
+  - delay: 68
+    content: ' '
+  - delay: 146
+    content: '-'
+  - delay: 248
+    content: l
+  - delay: 55
+    content: t
+  - delay: 56
+    content: r
+  - delay: 136
+    content: "\r\n"
+  - delay: 11
+    content: "total 16\r\n-rw-r--r-- 1 israel.ogbole staff 183 Jan 15 01:13 service.yaml\r\n-rw-r--r-- 1 israel.ogbole staff 195 Jan 15 01:20 secret.txt\r\n-rw-r--r-- 1 israel.ogbole staff 102 Jan 21 20:18 configmyap.yaml\r\n-rw-r--r-- 1 israel.ogbole staff 731 Jan 22 10:42 deploy.yaml\r\nkubernetes $ "
+  - delay: 16247
+    content: '# Enter your channel ID in configmap.yaml'
+  - delay: 683
+    content: "\r\nkubernetes $ "
+  - delay: 663
+    content: "\r\nkubernetes $ "
+  - delay: 597
+    content: v
+  - delay: 124
+    content: i
+  - delay: 102
+    content: ' '
+  - delay: 708
+    content: c
+  - delay: 67
+    content: o
+  - delay: 136
+    content: 'n'
+  - delay: 114
+    content: 'figmyap.yaml '
+  - delay: 526
+    content: "\r\n"
+  - delay: 59
+    content: "\e[?1049h\e[>4;2m\e[?1h\e=\e[?2004h\e[1;49r\e[?12h\e[?12l\e[22;2t\e[22;1t\e[27m\e[29m\e[m\e[H\e[2J\e[?25l\e[49;1H\"configmyap.yaml\" 6L, 102B\e[2;1H▽\e[6n\e[2;1H  \e[3;1H\ePzz\e\\\e[0%m\e[6n\e[3;1H           \e[1;1H\e[>c\e]10;?\a\e]11;?\a\e[1;1HapiVersion: v1\r\ndata:\e[2;6H\e[K\e[3;1H  CHANNEL_ID: C01JHNNMEES\e[3;26H\e[K\e[4;1Hkind: ConfigMap\r\nmetadata:\r\n  name: slack-channel-config\r\n\e[94m~                                                                                                                                                                                 \e[8;1H~                                                                                                                                                                                 \e[9;1H~                                                                                                                                                                                 \e[10;1H~                                                                                                                                                                                 \e[11;1H~                                                                                                                                                                                 \e[12;1H~                                                                                                                                                                                 \e[13;1H~                                                                                                                                                                                 \e[14;1H~                                                                                                                                                                                 \e[15;1H~                                                                                                                                                                                 \e[16;1H~                                                                                                                                                                                 \e[17;1H~                                                                                                                                                                                 \e[18;1H~                                                                                                                                                                                 \e[19;1H~                                                                                                                                                                                 \e[20;1H~                                                                                                                                                                                 \e[21;1H~                                                                                                                                                                                 \e[22;1H~                                                                                                                                                                                 \e[23;1H~                                                                                                                                                                                 \e[24;1H~                                                                                                                                                                                 \e[25;1H~                                                                                                                                                                                 \e[26;1H~                                                                                                                                                                                 \e[27;1H~                                                                                                                                                                                 \e[28;1H~                                                                                                                                                                                 \e[29;1H~                                                                                                                                                                                 \e[30;1H~                                                                                                                                                                                 \e[31;1H~                                                                                                                                                                                 \e[32;1H~                                                                                                                                                                                 \e[33;1H~                                                                                                                                                                                 \e[34;1H~                                                                                                                                                                                 \e[35;1H~                                                                                                                                                                                 \e[36;1H~                                                                                                                                                                                 \e[37;1H~                                                                                                                                                                                 \e[38;1H~                                                                                                                                                                                 \e[39;1H~                                                                                                                                                                                 \e[40;1H~                                                                                                                                                                                 \e[41;1H~                                                                                                                                                                                 \e[42;1H~                                                                                                                                                                                 \e[43;1H~                                                                                                                                                                                 \e[44;1H~                                                                                                                                                                                 \e[45;1H~                                                                                                                                                                                 \e[46;1H~                                                                                                                                                                                 \e[47;1H~                                                                                                                                                                                 \e[48;1H~                                                                                                                                                                                 \e[1;1H\e[?25h\e[?12$p"
+  - delay: 800
+    content: "\r\n"
+  - delay: 191
+    content: "\r\n"
+  - delay: 306
+    content: "\e[m "
+  - delay: 123
+    content: ' '
+  - delay: 500
+    content: C
+  - delay: 83
+    content: H
+  - delay: 84
+    content: A
+  - delay: 84
+    content: 'N'
+  - delay: 84
+    content: 'N'
+  - delay: 83
+    content: E
+  - delay: 83
+    content: L
+  - delay: 85
+    content: _
+  - delay: 84
+    content: I
+  - delay: 85
+    content: D
+  - delay: 196
+    content: ':'
+  - delay: 135
+    content: ' '
+  - delay: 147
+    content: C
+  - delay: 79
+    content: '0'
+  - delay: 111
+    content: '1'
+  - delay: 292
+    content: J
+  - delay: 90
+    content: H
+  - delay: 180
+    content: 'N'
+  - delay: 68
+    content: 'N'
+  - delay: 135
+    content: M
+  - delay: 135
+    content: E
+  - delay: 180
+    content: E
+  - delay: 1192
+    content: "\a\e[?25l\e[49;1H\e[K\e[49;1H:\e[?25h"
+  - delay: 260
+    content: w
+  - delay: 190
+    content: q
+  - delay: 248
+    content: '!'
+  - delay: 237
+    content: "\r\e[?25l\e[?2004l\e[>4;m\"configmyap.yaml\""
+  - delay: 6
+    content: ' 6L, 102B written'
+  - delay: 9
+    content: "\r\e[23;2t\e[23;1t\r\r\n\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049lkubernetes $ "
+  - delay: 456
+    content: "\r\nkubernetes $ "
+  - delay: 6313
+    content: '# Review details of the deployment manifest '
+  - delay: 402
+    content: "\r\nkubernetes $ "
+  - delay: 5208
+    content: v
+  - delay: 123
+    content: i
+  - delay: 123
+    content: ' '
+  - delay: 114
+    content: d
+  - delay: 134
+    content: e
+  - delay: 57
+    content: o
+  - delay: 148
+    content: "\a"
+  - delay: 606
+    content: "\b\e[K"
+  - delay: 225
+    content: p
+  - delay: 128
+    content: 'loy.yaml '
+  - delay: 435
+    content: "\r\n"
+  - delay: 31
+    content: "\e[?1049h\e[>4;2m\e[?1h\e=\e[?2004h\e[1;49r\e[?12h\e[?12l\e[22;2t\e[22;1t\e[27m\e[29m\e[m\e[H\e[2J\e[?25l\e[49;1H\"deploy.yaml\" 34L, 731B\e[2;1H▽\e[6n\e[2;1H  \e[3;1H\ePzz\e\\\e[0%m\e[6n\e[3;1H           \e[1;1H\e[>c\e]10;?\a\e]11;?\a\e[1;1HapiVersion: apps/v1\r\nkind: Deployment\e[2;17H\e[K\e[3;1Hmetadata:\e[3;10H\e[K\e[4;3Hname: slack-endpoint-mon-uk-deployment\r\n  labels:\r\n    app: slack-mon\r\nspec:\r\n  replicas: 3\r\n  selector:\r\n    matchLabels:\e[11;7Happ: slack-mon\r\n  template:\r\n    metadata:\e[14;7Hlabels:\e[15;9Happ: slack-mon\r\n    spec:\e[17;7Hcontainers:\e[18;7H- name: slack-mon\e[19;9Himage: iogbole/slack-endpoint-mon:arm\e[20;9HimagePullPolicy: Always\e[21;9Hports:\e[22;9H- containerPort: 3000\e[23;9Henv:\e[24;9H- name: SLACK_TOKEN\e[25;11HvalueFrom:\e[26;13HsecretKeyRef:\e[27;15Hname: slack-oauth-token\e[28;15Hkey: token\e[29;9HenvFrom:\e[30;11H- configMapRef:\e[31;15Hname: slack-channel-config\e[32;7HrestartPolicy: Always\e[33;7HdnsPolicy: ClusterFirst\r\nstatus: {}\r\n\e[94m~                                                                                                                                                                                 \e[36;1H~                                                                                                                                                                                 \e[37;1H~                                                                                                                                                                                 \e[38;1H~                                                                                                                                                                                 \e[39;1H~                                                                                                                                                                                 \e[40;1H~                                                                                                                                                                                 \e[41;1H~                                                                                                                                                                                 \e[42;1H~                                                                                                                                                                                 \e[43;1H~                                                                                                                                                                                 \e[44;1H~                                                                                                                                                                                 \e[45;1H~                                                                                                                                                                                 \e[46;1H~                                                                                                                                                                                 \e[47;1H~                                                                                                                                                                                 \e[48;1H~                                                                                                                                                                                 \e[1;1H\e[?25h\e[?12$p"
+  - delay: 785
+    content: "\r\n"
+  - delay: 124
+    content: "\r\n"
+  - delay: 100
+    content: "\r\n"
+  - delay: 123
+    content: "\r\n"
+  - delay: 124
+    content: "\r\n"
+  - delay: 91
+    content: "\r\n"
+  - delay: 90
+    content: "\r\n"
+  - delay: 501
+    content: "\r\n"
+  - delay: 82
+    content: "\r\n"
+  - delay: 86
+    content: "\r\n"
+  - delay: 83
+    content: "\r\n"
+  - delay: 85
+    content: "\r\n"
+  - delay: 82
+    content: "\r\n"
+  - delay: 85
+    content: "\r\n"
+  - delay: 255
+    content: "\r\n"
+  - delay: 192
+    content: "\r\n"
+  - delay: 203
+    content: "\r\n"
+  - delay: 168
+    content: "\r\n"
+  - delay: 192
+    content: "\e[m "
+  - delay: 501
+    content: ' '
+  - delay: 83
+    content: ' '
+  - delay: 83
+    content: ' '
+  - delay: 85
+    content: ' '
+  - delay: 84
+    content: ' '
+  - delay: 84
+    content: ' '
+  - delay: 83
+    content: ' '
+  - delay: 84
+    content: i
+  - delay: 85
+    content: m
+  - delay: 83
+    content: a
+  - delay: 83
+    content: g
+  - delay: 83
+    content: e
+  - delay: 85
+    content: ':'
+  - delay: 84
+    content: ' '
+  - delay: 82
+    content: i
+  - delay: 83
+    content: o
+  - delay: 84
+    content: g
+  - delay: 85
+    content: b
+  - delay: 83
+    content: o
+  - delay: 84
+    content: l
+  - delay: 84
+    content: e
+  - delay: 83
+    content: /
+  - delay: 84
+    content: s
+  - delay: 84
+    content: l
+  - delay: 83
+    content: a
+  - delay: 85
+    content: c
+  - delay: 83
+    content: k
+  - delay: 84
+    content: '-'
+  - delay: 83
+    content: e
+  - delay: 83
+    content: 'n'
+  - delay: 83
+    content: d
+  - delay: 84
+    content: p
+  - delay: 84
+    content: o
+  - delay: 83
+    content: i
+  - delay: 84
+    content: 'n'
+  - delay: 83
+    content: t
+  - delay: 84
+    content: '-'
+  - delay: 83
+    content: m
+  - delay: 84
+    content: o
+  - delay: 84
+    content: 'n'
+  - delay: 83
+    content: ':'
+  - delay: 382
+    content: a
+  - delay: 281
+    content: r
+  - delay: 214
+    content: "\a"
+  - delay: 1767
+    content: "\e[20;31H"
+  - delay: 213
+    content: "\e[21;14H"
+  - delay: 158
+    content: "\e[22;29H"
+  - delay: 259
+    content: "\e[23;12H"
+  - delay: 249
+    content: "\e[24;27H"
+  - delay: 233
+    content: "\e[25;21H"
+  - delay: 249
+    content: "\e[26;25H"
+  - delay: 888
+    content: "\e[27;37H"
+  - delay: 697
+    content: "\b"
+  - delay: 338
+    content: "\b"
+  - delay: 169
+    content: "\b"
+  - delay: 293
+    content: "\e[28;24H"
+  - delay: 304
+    content: "\b"
+  - delay: 899
+    content: "\e[29;16H"
+  - delay: 192
+    content: "\e[30;23H"
+  - delay: 213
+    content: "\e[31;23H"
+  - delay: 405
+    content: a
+  - delay: 180
+    content: c
+  - delay: 79
+    content: k
+  - delay: 293
+    content: '-'
+  - delay: 135
+    content: c
+  - delay: 100
+    content: h
+  - delay: 1102
+    content: "\a\e[?25l\e[49;1H\e[K\e[49;1H:\e[?25h"
+  - delay: 239
+    content: w
+  - delay: 201
+    content: q
+  - delay: 292
+    content: '!'
+  - delay: 226
+    content: "\r\e[?25l\e[?2004l\e[>4;m\"deploy.yaml\""
+  - delay: 5
+    content: ' 34L, 731B written'
+  - delay: 8
+    content: "\r\e[23;2t\e[23;1t\r\r\n\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049lkubernetes $ "
+  - delay: 367
+    content: "\r\nkubernetes $ "
+  - delay: 146
+    content: "\r\nkubernetes $ "
+  - delay: 8374
+    content: '# Let''s Deploy! '
+  - delay: 278
+    content: "\r\nkubernetes $ "
+  - delay: 1136
+    content: "\r\nkubernetes $ "
+  - delay: 416
+    content: k
+  - delay: 113
+    content: ' '
+  - delay: 158
+    content: a
+  - delay: 100
+    content: p
+  - delay: 135
+    content: p
+  - delay: 157
+    content: l
+  - delay: 57
+    content: 'y'
+  - delay: 270
+    content: ' '
+  - delay: 325
+    content: '-'
+  - delay: 102
+    content: f
+  - delay: 158
+    content: ' '
+  - delay: 167
+    content: .
+  - delay: 125
+    content: ' '
+  - delay: 1496
+    content: "\r\n"
+  - delay: 468
+    content: "configmap/slack-channel-config created\r\n"
+  - delay: 145
+    content: "deployment.apps/slack-endpoint-mon-uk-deployment created\r\n"
+  - delay: 302
+    content: "service/slack-service created\r\n"
+  - delay: 7
+    content: 'kubernetes $ '
+  - delay: 1373
+    content: "\r\nkubernetes $ "
+  - delay: 169
+    content: "\r\nkubernetes $ "
+  - delay: 707
+    content: k
+  - delay: 90
+    content: ' '
+  - delay: 147
+    content: g
+  - delay: 124
+    content: e
+  - delay: 169
+    content: t
+  - delay: 90
+    content: ' '
+  - delay: 225
+    content: p
+  - delay: 258
+    content: o
+  - delay: 427
+    content: "\r\n"
+  - delay: 202
+    content: "NAME                                               READY   STATUS              RESTARTS   AGE\r\nslack-endpoint-mon-uk-deployment-9d4769969-tvtj9   0/1     ContainerCreating   0          4s\r\nslack-endpoint-mon-uk-deployment-9d4769969-sh5ms   0/1     ContainerCreating   0          4s\r\nslack-endpoint-mon-uk-deployment-9d4769969-xb45j   1/1     Running             0          4s\r\nkubernetes $ "
+  - delay: 695
+    content: "\r\nkubernetes $ "
+  - delay: 202
+    content: "\r\nkubernetes $ "
+  - delay: 26523
+    content: '# Let''s check the logs of a pod to see if it is working OK... '
+  - delay: 973
+    content: "\r\nkubernetes $ "
+  - delay: 575
+    content: "\r\nkubernetes $ "
+  - delay: 708
+    content: k
+  - delay: 169
+    content: ' '
+  - delay: 213
+    content: l
+  - delay: 214
+    content: o
+  - delay: 539
+    content: g
+  - delay: 249
+    content: s
+  - delay: 337
+    content: ' '
+  - delay: 180
+    content: '-'
+  - delay: 66
+    content: f
+  - delay: 158
+    content: ' '
+  - delay: 2906
+    content: slack-endpoint-mon-uk-deployment-9d4769969-tvtj9
+  - delay: 1484
+    content: "\r\n"
+  - delay: 652
+    content: "\r\n"
+  - delay: 6
+    content: "> Ping@0.2.0 start /opt/slack-endpoint-mon\r\n> node app\r\n\r\n\r\nMonitoring:http://www.wwdff.com\r\nTime: 2021-01-22 10:48:33\r\n\r\n\r\nMonitoring:https://www.fastly.com\r\nTime: 2021-01-22 10:48:33\r\n\r\n\r\n"
+  - delay: 5
+    content: "Monitoring:https://www.npmjs.com\r\nTime: 2021-01-22 10:48:33\r\n\r\n\r\nMonitoring:http://example.com\r\nTime: 2021-01-22 10:48:33\r\n\r\n\r\nMonitoring:https://github.com\r\nTime: 2021-01-22 10:48:33\r\n\r\nListening to port 3000\r\nYep https://www.fastly.com is up. OK\r\nhttp://www.wwdff.com is down. Slack message sent!\r\nYep https://www.npmjs.com is up. OK\r\nYep http://example.com is up. OK\r\nYep https://github.com is up. OK\r\n{\r\n  ok: true,\r\n  channel: 'C01JHNNMEES',\r\n  ts: '1611312519.001300',\r\n"
+  - delay: 11
+    content: "  message: {\r\n    bot_id: 'B01K38T7H09',\r\n    type: 'message',\r\n    text: '<http://www.wwdff.com> is down <@U01KEBE7140> ',\r\n    user: 'U01JMH3PPA9',\r\n    ts: '1611312519.001300',\r\n    team: 'T01JQN3PTT5',\r\n    bot_profile: {\r\n      id: 'B01K38T7H09',\r\n      deleted: false,\r\n      name: 'israelo.io',\r\n      updated: 1610631802,\r\n      app_id: 'A01JQN73Q75',\r\n      icons: [Object],\r\n      team_id: 'T01JQN3PTT5'\r\n    }\r\n  },\r\n  response_metadata: {\r\n    scopes: [\r\n      'calls:write',\r\n      'channels:manage',\r\n      'chat:write',\r\n      'incoming-webhook'\r\n    ],\r\n    acceptedScopes: [ 'chat:write' ]\r\n  }\r\n}\r\n"
+  - delay: 12453
+    content: "\r\n"
+  - delay: 178
+    content: "\r\n"
+  - delay: 1441
+    content: "^C\r\nkubernetes $ "
+  - delay: 4226
+    content: '#'
+  - delay: 4657
+    content: ' '
+  - delay: 214
+    content: T
+  - delay: 181
+    content: h
+  - delay: 45
+    content: a
+  - delay: 314
+    content: t
+  - delay: 226
+    content: ''''
+  - delay: 55
+    content: s
+  - delay: 79
+    content: ' '
+  - delay: 225
+    content: p
+  - delay: 55
+    content: e
+  - delay: 79
+    content: r
+  - delay: 416
+    content: f
+  - delay: 225
+    content: e
+  - delay: 203
+    content: c
+  - delay: 148
+    content: t
+  - delay: 415
+    content: '`'
+  - delay: 945
+    content: "\b\e[K"
+  - delay: 450
+    content: '!'
+  - delay: 450
+    content: "http://www.wwdff.com is down, and a notification was sent to the specified slack channel."
+  - delay: 250
+    content: "Slack is Awesomely Beautiful!"
+  - delay: 250
+    content: "Thanks"
+  - delay: 250
+    content: "Bye"
+  - delay: 540
+    content: "\r\nkubernetes $ "
+  - delay: 250
+    content: "I am Israel Ogbole"
+  - delay: 664
+    content: "\r\nkubernetes $ "
+  - delay: 3004
+    content: "logout\r\n"

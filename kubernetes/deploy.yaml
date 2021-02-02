@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slack-endpoint-mon-uk-deployment
+  labels:
+    app: slack-mon
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: slack-mon
+  template:
+    metadata:
+      labels:
+        app: slack-mon
+    spec:
+      containers:
+      - name: slack-mon
+        image: iogbole/slack-endpoint-mon:arm
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        env:
+        - name: SLACK_TOKEN
+          valueFrom: 
+            secretKeyRef:
+              name: slack-oauth-token
+              key: token
+        envFrom:
+          - configMapRef: 
+              name: slack-channel-config
+      restartPolicy: Always
+      dnsPolicy: ClusterFirst
+status: {}
