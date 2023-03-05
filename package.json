@@ -21,7 +21,7 @@
   "dependencies": {
     "@slack/web-api": "^6.0.0",
     "dotenv": "^8.2.0",
-    "ping-monitor": "^0.5.2"
+    "ping-monitor": "^0.7.0"
   },
   "author": "Israel Ogbole",
   "license": "Apache2",
