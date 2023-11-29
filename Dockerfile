@@ -1,5 +1,5 @@
 # Use this for x86/x64 Intel Processors  
-FROM node:14.15.4 
+FROM node:14.21.3 
 # FROM arm32v7/node:10-slim # Used for arm processors - for running on Raspberry Pis for example. 
  
 # Create app directory
