@@ -19,7 +19,7 @@
     "slack"
   ],
   "dependencies": {
-    "@slack/web-api": "^6.0.0",
+    "@slack/web-api": "^6.9.1",
     "dotenv": "^8.2.0",
     "ping-monitor": "^0.5.2"
   },
